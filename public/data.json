@@ -4,119 +4,131 @@
     "playerName": "Shakib Al Hasan",
     "playerCountry": "Bangladesh",
     "playerType": "All-Rounder",
-    "playerRating": 92,
-    "playerStyle": "Left-hand Bat / Slow Left-arm Orthodox",
+    "playerRating": 9.2,
+    "playerBattingStyle": "Left-hand Bat",
+    "playerBowlingStyle": "Slow Left-arm Orthodox",
     "playerPrice": 90000,
-    "playerImage": "https://example.com/shakib.jpg"
+    "playerImage": "https://i.ibb.co/qFX19w9y/403479.webp"
   },
   {
     "playerId": 2,
     "playerName": "Tamim Iqbal",
     "playerCountry": "Bangladesh",
     "playerType": "Batsman",
-    "playerRating": 88,
-    "playerStyle": "Left-hand Bat",
+    "playerRating": 8.8,
+    "playerBattingStyle": "Left-hand Bat",
+    "playerBowlingStyle": "N/A",
     "playerPrice": 80000,
-    "playerImage": "https://example.com/tamim.jpg"
+    "playerImage": "https://i.ibb.co/qFX19w9y/403479.webp"
   },
   {
     "playerId": 3,
     "playerName": "Mushfiqur Rahim",
     "playerCountry": "Bangladesh",
     "playerType": "Wicketkeeper",
-    "playerRating": 87,
-    "playerStyle": "Right-hand Bat",
+    "playerRating": 8.7,
+    "playerBattingStyle": "Right-hand Bat",
+    "playerBowlingStyle": "N/A",
     "playerPrice": 75000,
-    "playerImage": "https://example.com/mushfiq.jpg"
+    "playerImage": "https://i.ibb.co/qFX19w9y/403479.webp"
   },
   {
     "playerId": 4,
     "playerName": "Mahmudullah Riyad",
     "playerCountry": "Bangladesh",
     "playerType": "All-Rounder",
-    "playerRating": 85,
-    "playerStyle": "Right-hand Bat / Off Spin",
+    "playerRating": 8.5,
+    "playerBattingStyle": "Right-hand Bat",
+    "playerBowlingStyle": "Off Spin",
     "playerPrice": 70000,
-    "playerImage": "https://example.com/mahmudullah.jpg"
+    "playerImage": "https://i.ibb.co/qFX19w9y/403479.webp"
   },
   {
     "playerId": 5,
     "playerName": "Mustafizur Rahman",
     "playerCountry": "Bangladesh",
     "playerType": "Bowler",
-    "playerRating": 89,
-    "playerStyle": "Left-arm Fast",
+    "playerRating": 8.9,
+    "playerBattingStyle": "Left-hand Bat",
+    "playerBowlingStyle": "Left-arm Fast",
     "playerPrice": 85000,
-    "playerImage": "https://example.com/mustafiz.jpg"
+    "playerImage": "https://i.ibb.co/qFX19w9y/403479.webp"
   },
   {
     "playerId": 6,
     "playerName": "Litton Das",
     "playerCountry": "Bangladesh",
     "playerType": "Batsman",
-    "playerRating": 86,
-    "playerStyle": "Right-hand Bat",
+    "playerRating": 8.6,
+    "playerBattingStyle": "Right-hand Bat",
+    "playerBowlingStyle": "N/A",
     "playerPrice": 72000,
-    "playerImage": "https://example.com/litton.jpg"
+    "playerImage": "https://i.ibb.co/qFX19w9y/403479.webp"
   },
   {
     "playerId": 7,
     "playerName": "Andre Russell",
     "playerCountry": "West Indies",
     "playerType": "All-Rounder",
-    "playerRating": 91,
-    "playerStyle": "Right-hand Bat / Right-arm Fast",
+    "playerRating": 9.1,
+    "playerBattingStyle": "Right-hand Bat",
+    "playerBowlingStyle": "Right-arm Fast",
     "playerPrice": 110000,
-    "playerImage": "https://example.com/russell.jpg"
+    "playerImage": "https://i.ibb.co/qFX19w9y/403479.webp"
   },
   {
     "playerId": 8,
     "playerName": "Faf du Plessis",
     "playerCountry": "South Africa",
     "playerType": "Batsman",
-    "playerRating": 88,
-    "playerStyle": "Right-hand Bat",
+    "playerRating": 8.8,
+    "playerBattingStyle": "Right-hand Bat",
+    "playerBowlingStyle": "N/A",
     "playerPrice": 95000,
-    "playerImage": "https://example.com/faf.jpg"
+    "playerImage": "https://i.ibb.co/qFX19w9y/403479.webp"
   },
   {
     "playerId": 9,
     "playerName": "Rashid Khan",
     "playerCountry": "Afghanistan",
     "playerType": "Bowler",
-    "playerRating": 93,
-    "playerStyle": "Right-arm Leg Spin",
+    "playerRating": 9.3,
+    "playerBattingStyle": "Right-hand Bat",
+    "playerBowlingStyle": "Right-arm Leg Spin",
     "playerPrice": 120000,
-    "playerImage": "https://example.com/rashid.jpg"
+    "playerImage": "https://i.ibb.co/qFX19w9y/403479.webp"
   },
   {
     "playerId": 10,
     "playerName": "David Miller",
     "playerCountry": "South Africa",
     "playerType": "Batsman",
-    "playerRating": 87,
-    "playerStyle": "Left-hand Bat",
+    "playerRating": 8.7,
+    "playerBattingStyle": "Left-hand Bat",
+    "playerBowlingStyle": "N/A",
     "playerPrice": 90000,
-    "playerImage": "https://example.com/miller.jpg"
+    "playerImage": "https://i.ibb.co/qFX19w9y/403479.webp"
   },
   {
     "playerId": 11,
     "playerName": "Sunil Narine",
     "playerCountry": "West Indies",
     "playerType": "All-Rounder",
-    "playerRating": 90,
-    "playerStyle": "Right-hand Bat / Off Spin",
+    "playerRating": 9.0,
+    "playerBattingStyle": "Right-hand Bat",
+    "playerBowlingStyle": "Off Spin",
     "playerPrice": 100000,
-    "playerImage": "https://example.com/narine.jpg"
+    "playerImage": "https://i.ibb.co/qFX19w9y/403479.webp"
   },
   {
     "playerId": 12,
     "playerName": "Taskin Ahmed",
     "playerCountry": "Bangladesh",
     "playerType": "Bowler",
-    "playerRating": 84,
-    "playerStyle": "Right-arm Fast",
+    "playerRating": 8.4,
+    "playerBattingStyle": "Right-hand Bat",
+    "playerBowlingStyle": "Right-arm Fast",
     "playerPrice": 65000,
-    "playerImage": "https://example.com/taskin.jpg"
+    "playerImage": "https://i.ibb.co/qFX19w9y/403479.webp"
   }
 ]
