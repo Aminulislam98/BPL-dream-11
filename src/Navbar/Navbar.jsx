@@ -1,4 +1,5 @@
 import React from "react";
+import navbarLogo from "../assets/logo.png";
 
 import CoinImage from "../assets/coin.png";
 
@@ -7,10 +8,16 @@ const Navbar = () => {
     <div className="shadow mb-10">
       <div className="navbar bg-base-100  container mx-auto  ">
         <div className="flex-1">
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <img className="w-15 h-15" src={navbarLogo} alt="" />
         </div>
         <div className="flex-none">
-          <button className="flex justify-between items-center font-semibold gap-2 px-4">
+          <button
+            className="flex justify-between
+           items-center font-semibold gap-2
+             py-2 px-4 border-2 rounded-xl border-gray-300
+             text-base hover:bg-gray-100
+             "
+          >
             0 Coin
             <img src={CoinImage} alt="coin-image" />
           </button>
