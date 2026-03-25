@@ -13,6 +13,8 @@ const playerRes = playerDetails();
 function App() {
   const [coin, setCoin] = useState(50000);
   const [available, setAvailable] = useState("available");
+  const [selectedPlayer, setSelectedPlayer] = useState([]);
+
   return (
     <>
       <Navbar coin={coin}></Navbar>
@@ -23,6 +25,8 @@ function App() {
         setCoin={setCoin}
         available={available}
         setAvailable={setAvailable}
+        selectedPlayer={selectedPlayer}
+        setSelectedPlayer={setSelectedPlayer}
       ></Player>
     </>
   );

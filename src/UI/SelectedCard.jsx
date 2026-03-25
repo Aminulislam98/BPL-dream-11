@@ -1,20 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaFlag, FaUser } from "react-icons/fa";
 
-const Card = ({ player, coin, setCoin, setSelectedPlayer }) => {
-  const [isSelected, setIsSelected] = useState(false);
-  const chosePlayer = () => {
-    if (player.playerPrice < coin) {
-      setIsSelected(true);
-      setCoin(coin - player.playerPrice);
-      setSelectedPlayer((prev) => {
-        return [...prev, player];
-      });
-
-      return;
-    }
-    alert(`Not enough Money to buy ${player.playerName}`);
-    return;
+const SelectedCard = ({ player, setSelectedPlayer, coin, setCoin }) => {
+  const deletePlayer = (playerDelete) => {
+    setSelectedPlayer((previous) => {
+      const exist = previous.find(
+        (player) => player.playerId === playerDelete.playerId,
+      );
+      if (exist) {
+        return previous.filter(
+          (previousPlayer) => previousPlayer.playerId !== playerDelete.playerId,
+          setCoin(coin + player.playerPrice),
+        );
+      }
+    });
   };
   return (
     <div className="p-6 border border-gray-300 rounded-3xl">
@@ -56,12 +55,11 @@ const Card = ({ player, coin, setCoin, setSelectedPlayer }) => {
           </p>
           <button
             onClick={() => {
-              chosePlayer();
+              deletePlayer(player);
             }}
-            disabled={isSelected}
-            className={`border-2 ${isSelected === true ? " bg-green-100 border-green-500 text-green-600 font-bold" : " border-gray-300"} py-1 px-4 rounded-xl text-sm cursor-pointer`}
+            className="btn btn-accent"
           >
-            {isSelected === true ? "Selected" : "Chose Player"}
+            Delete
           </button>
         </div>
       </div>
@@ -69,4 +67,4 @@ const Card = ({ player, coin, setCoin, setSelectedPlayer }) => {
   );
 };
 
-export default Card;
+export default SelectedCard;
