@@ -1,10 +1,9 @@
-import React, { use, useState } from "react";
+import React, { use } from "react";
 import AvailablePlayer from "./AvailablePlayer";
 import SelectedPlayer from "./SelectedPlayer";
 
-const Player = ({ playerRes }) => {
+const Player = ({ playerRes, coin, setCoin, available, setAvailable }) => {
   const players = use(playerRes);
-  const [available, setAvailable] = useState("available");
 
   return (
     <div className="max-w-7xl mx-auto mt-10">
@@ -34,14 +33,21 @@ const Player = ({ playerRes }) => {
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6 ">
-        {players.map((player) => (
-          <AvailablePlayer
-            key={player.playerId}
-            player={player}
-          ></AvailablePlayer>
-        ))}
-      </div>
+
+      {available === "available" ? (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6 ">
+          {players.map((player) => (
+            <AvailablePlayer
+              key={player.playerId}
+              player={player}
+              coin={coin}
+              setCoin={setCoin}
+            ></AvailablePlayer>
+          ))}
+        </div>
+      ) : (
+        <SelectedPlayer></SelectedPlayer>
+      )}
     </div>
   );
 };

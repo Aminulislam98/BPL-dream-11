@@ -3,9 +3,9 @@ import navbarLogo from "../assets/logo.png";
 
 import CoinImage from "../assets/coin.png";
 
-const Navbar = () => {
+const Navbar = ({ coin }) => {
   return (
-    <div className="shadow mb-10">
+    <div className="shadow mb-10 sticky top-0 z-50">
       <div className="navbar bg-base-100  container mx-auto  ">
         <div className="flex-1">
           <img className="w-15 h-15" src={navbarLogo} alt="" />
@@ -18,7 +18,7 @@ const Navbar = () => {
              text-base hover:bg-gray-100
              "
           >
-            0 Coin
+            {coin} Coin
             <img src={CoinImage} alt="coin-image" />
           </button>
         </div>

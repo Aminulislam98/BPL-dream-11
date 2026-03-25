@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import Banner from "./Banner/Banner";
 import Navbar from "./Navbar/Navbar";
@@ -7,14 +8,22 @@ const playerDetails = async () => {
   const playerResponse = await fetch("/data.json");
   return playerResponse.json();
 };
-const playerRes = playerDetails();
 
+const playerRes = playerDetails();
 function App() {
+  const [coin, setCoin] = useState(50000);
+  const [available, setAvailable] = useState("available");
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar coin={coin}></Navbar>
       <Banner></Banner>
-      <Player playerRes={playerRes}></Player>
+      <Player
+        playerRes={playerRes}
+        coin={coin}
+        setCoin={setCoin}
+        available={available}
+        setAvailable={setAvailable}
+      ></Player>
     </>
   );
 }
