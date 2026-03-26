@@ -5,7 +5,7 @@ import CoinImage from "../assets/coin.png";
 
 const Navbar = ({ coin }) => {
   return (
-    <div className="shadow mb-10 sticky top-0 z-50">
+    <div className="shadow mb-10 sticky top-0 z-50 bg-white">
       <div className="navbar bg-base-100  container mx-auto  ">
         <div className="flex-1">
           <img className="w-15 h-15" src={navbarLogo} alt="" />

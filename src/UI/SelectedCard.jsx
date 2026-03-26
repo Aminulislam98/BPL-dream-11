@@ -26,13 +26,13 @@ const SelectedCard = ({
         return prevName.filter((pName) => pName !== playerDelete.playerName);
       });
       toast.success(`${player.playerName} is deleted`, {
-        position: "bottom-center",
+        position: "top-right",
       });
     }
   };
   return (
     <div className="grid grid-cols-2 border-b border-gray-200 py-3  px-4 hover:-translate-y-0.5 transition-transform duration-200 ">
-      <div className="photo&name flex flex-row gap-2 md:gap-3 justify-start items-center">
+      <div className="photo&name flex flex-row gap-2 md:gap-3 justify-start items-center mr-2 md:mr-0">
         <div className="w-15 h-15 overflow-hidden rounded-xl">
           <img
             className="w-full h-full object-cover"
@@ -41,20 +41,24 @@ const SelectedCard = ({
           />
         </div>
         <div>
-          <h2 className="text-xl font-semibold">{player.playerName}</h2>
+          <h2 className="text-base md:text-xl font-semibold">
+            {player.playerName}
+          </h2>
           <div className="flex flex-col md:flex-row text-xs md:text-sm text-gray-600  md:gap-3">
             <h2>{player.playerType}</h2>
-            <h2>{player.playerName}</h2>
+            <h2>{player.playerCountry}</h2>
           </div>
         </div>
       </div>
-      <div className="rating&price&delete flex flex-row justify-between items-top md:items-center">
-        <div className="flex flex-col justify-top md:justify-center items-center">
+      <div className="rating&price&delete flex flex-row justify-between items-center ml-4 md:ml-0">
+        <div className="flex flex-col justify-center items-center">
           <p className="text-base font-semibold">Rating</p>
           <p className="font-semibold text-green-600">{player.playerRating}</p>
         </div>
         <div className="">
-          <h2 className="font-semibold text-xl">£{player.playerPrice}</h2>
+          <h2 className="font-semibold text-base md:text-xl">
+            £{player.playerPrice}
+          </h2>
         </div>
         <div>
           <button>

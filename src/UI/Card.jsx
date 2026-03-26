@@ -21,7 +21,7 @@ const Card = ({
         return [...prevName, player.playerName];
       });
       toast.success(`${player.playerName} is Selected`, {
-        position: "bottom-center",
+        position: "top-right",
         pauseOnHover: false,
       });
       return;
@@ -110,10 +110,10 @@ const Card = ({
         <button
           onClick={chosePlayer}
           disabled={isSelected}
-          className={`text-[11px] font-semibold px-4 py-2 rounded-[10px] border transition-all duration-150
+          className={`text-xs font-semibold px-4 py-2 rounded-[10px] border transition-all duration-150
         ${
           isSelected
-            ? "border-emerald-300 bg-emerald-50 text-emerald-600 cursor-not-allowed"
+            ? "border-green-300 bg-green-100 text-green-600 cursor-not-allowed"
             : "border-gray-200 bg-gray-50 text-gray-600 hover:bg-gray-100 hover:border-gray-300 cursor-pointer"
         }`}
         >
