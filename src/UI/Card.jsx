@@ -31,7 +31,7 @@ const Card = ({
     return;
   };
   return (
-    <div className="w-full rounded-[18px] overflow-hidden bg-white border border-gray-100 cursor-pointer hover:-translate-y-[3px] transition-transform duration-200 shadow-sm">
+    <div className="w-full rounded-[18px] overflow-hidden bg-white border border-gray-100 cursor-pointer hover:-translate-y-[2px] transition-transform duration-200 shadow-sm">
       {/* ── Photo zone ── */}
       <div className="relative overflow-hidden bg-gray-100 rounded-t-[18px]">
         <img

@@ -11,7 +11,7 @@ const playerDetails = async () => {
 
 const playerRes = playerDetails();
 function App() {
-  const [coin, setCoin] = useState(50000);
+  const [coin, setCoin] = useState(180000);
   const [available, setAvailable] = useState("available");
   const [selectedPlayer, setSelectedPlayer] = useState([]);
   const [selectedName, setSelectedName] = useState([]);
