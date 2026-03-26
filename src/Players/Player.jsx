@@ -46,7 +46,7 @@ const Player = ({
       </div>
 
       {available === "available" ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6 ">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 ">
           {players.map((player) => (
             <AvailablePlayer
               key={player.playerId}
@@ -59,15 +59,22 @@ const Player = ({
         </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6 ">
-          {selectedPlayer.map((player) => (
-            <SelectedCard
-              player={player}
-              selectedPlayer={selectedPlayer}
-              setSelectedPlayer={setSelectedPlayer}
-              coin={coin}
-              setCoin={setCoin}
-            ></SelectedCard>
-          ))}
+          {selectedPlayer.length === 0 ? (
+            <div>
+              <h1>No Player Selected yet!</h1>
+              <h1>Go to available section to select player</h1>
+            </div>
+          ) : (
+            selectedPlayer.map((player) => (
+              <SelectedCard
+                player={player}
+                selectedPlayer={selectedPlayer}
+                setSelectedPlayer={setSelectedPlayer}
+                coin={coin}
+                setCoin={setCoin}
+              ></SelectedCard>
+            ))
+          )}
         </div>
       )}
     </div>

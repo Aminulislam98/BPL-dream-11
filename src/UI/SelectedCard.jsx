@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFlag, FaUser } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 const SelectedCard = ({ player, setSelectedPlayer, coin, setCoin }) => {
   const deletePlayer = (playerDelete) => {
@@ -11,6 +12,9 @@ const SelectedCard = ({ player, setSelectedPlayer, coin, setCoin }) => {
         return previous.filter(
           (previousPlayer) => previousPlayer.playerId !== playerDelete.playerId,
           setCoin(coin + player.playerPrice),
+          toast.success(`${player.playerName} is deleted`, {
+            position: "bottom-center",
+          }),
         );
       }
     });
