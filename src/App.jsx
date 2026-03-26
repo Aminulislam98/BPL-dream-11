@@ -19,8 +19,8 @@ function App() {
 
   return (
     <>
-      <Navbar coin={coin}></Navbar>
-      <Banner></Banner>
+      <Navbar coin={coin} setCoin={setCoin}></Navbar>
+      <Banner coin={coin} setCoin={setCoin}></Banner>
 
       <Suspense
         fallback={

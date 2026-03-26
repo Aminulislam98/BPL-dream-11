@@ -18,8 +18,7 @@ const Navbar = ({ coin }) => {
              text-base hover:bg-gray-100
              "
           >
-            {coin.toLocaleString()} Coin
-            <img src={CoinImage} alt="coin-image" />
+            Budget: £{coin.toLocaleString()}
           </button>
         </div>
       </div>
