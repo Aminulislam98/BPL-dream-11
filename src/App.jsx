@@ -14,6 +14,7 @@ function App() {
   const [coin, setCoin] = useState(50000);
   const [available, setAvailable] = useState("available");
   const [selectedPlayer, setSelectedPlayer] = useState([]);
+  const [selectedName, setSelectedName] = useState([]);
 
   return (
     <>
@@ -27,6 +28,8 @@ function App() {
         setAvailable={setAvailable}
         selectedPlayer={selectedPlayer}
         setSelectedPlayer={setSelectedPlayer}
+        selectedName={selectedName}
+        setSelectedName={setSelectedName}
       ></Player>
     </>
   );

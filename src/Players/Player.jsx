@@ -10,6 +10,8 @@ const Player = ({
   setAvailable,
   selectedPlayer,
   setSelectedPlayer,
+  selectedName,
+  setSelectedName,
 }) => {
   const players = use(playerRes);
   const totalPlayer = selectedPlayer.length > 0 && `(${selectedPlayer.length})`;
@@ -54,6 +56,8 @@ const Player = ({
               coin={coin}
               setCoin={setCoin}
               setSelectedPlayer={setSelectedPlayer}
+              selectedName={selectedName}
+              setSelectedName={setSelectedName}
             ></AvailablePlayer>
           ))}
         </div>
@@ -72,6 +76,7 @@ const Player = ({
                 setSelectedPlayer={setSelectedPlayer}
                 coin={coin}
                 setCoin={setCoin}
+                setSelectedName={setSelectedName}
               ></SelectedCard>
             ))
           )}
