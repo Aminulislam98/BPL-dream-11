@@ -13,6 +13,7 @@ const Card = ({ player, coin, setCoin, setSelectedPlayer }) => {
       });
       toast.success(`${player.playerName} is Selected`, {
         position: "bottom-center",
+        pauseOnHover: false,
       });
       return;
     }
