@@ -94,7 +94,7 @@ const Card = ({ player, coin, setCoin, setSelectedPlayer }) => {
             Auction price
           </p>
           <p className="text-[20px] font-semibold text-gray-900">
-            ৳{player.playerPrice.toLocaleString()}
+            £{player.playerPrice.toLocaleString()}
           </p>
         </div>
         <button
