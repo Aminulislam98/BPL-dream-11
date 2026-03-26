@@ -8,27 +8,26 @@ const SelectedCard = ({
   coin,
   setCoin,
   setSelectedName,
+  selectedPlayer,
 }) => {
   const deletePlayer = (playerDelete) => {
-    setSelectedPlayer((previous) => {
-      const exist = previous.find(
-        (player) => player.playerId === playerDelete.playerId,
-      );
-      if (exist) {
+    const exist = selectedPlayer.find(
+      (player) => player.playerId === playerDelete.playerId,
+    );
+    if (exist) {
+      setSelectedPlayer((previous) => {
         return previous.filter(
           (previousPlayer) => previousPlayer.playerId !== playerDelete.playerId,
-          setCoin(coin + player.playerPrice),
-          setSelectedName((prevName) => {
-            return prevName.filter(
-              (pName) => pName !== playerDelete.playerName,
-            );
-          }),
-          toast.success(`${player.playerName} is deleted`, {
-            position: "bottom-center",
-          }),
         );
-      }
-    });
+      });
+      setCoin(coin + player.playerPrice);
+      setSelectedName((prevName) => {
+        return prevName.filter((pName) => pName !== playerDelete.playerName);
+      });
+      toast.success(`${player.playerName} is deleted`, {
+        position: "bottom-center",
+      });
+    }
   };
   return (
     <div className="p-6 border border-gray-300 rounded-3xl">
