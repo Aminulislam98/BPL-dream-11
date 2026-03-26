@@ -19,19 +19,9 @@
     "playerBattingStyle": "Left-hand Bat",
     "playerBowlingStyle": "N/A",
     "playerPrice": 8000,
-    "playerImage": "https://i.ibb.co/qFX19w9y/403479.webp"
+    "playerImage": "https://i.ibb.co/5XqTCmmG/Tamim-Iqbal-130-vs-West-Indies.jpg"
   },
-  {
-    "playerId": 3,
-    "playerName": "Mushfiqur Rahim",
-    "playerCountry": "Bangladesh",
-    "playerType": "Wicketkeeper",
-    "playerRating": 8.7,
-    "playerBattingStyle": "Right-hand Bat",
-    "playerBowlingStyle": "N/A",
-    "playerPrice": 75000,
-    "playerImage": "https://i.ibb.co/qFX19w9y/403479.webp"
-  },
+
   {
     "playerId": 4,
     "playerName": "Mahmudullah Riyad",
@@ -41,7 +31,7 @@
     "playerBattingStyle": "Right-hand Bat",
     "playerBowlingStyle": "Off Spin",
     "playerPrice": 70000,
-    "playerImage": "https://i.ibb.co/qFX19w9y/403479.webp"
+    "playerImage": "https://i.ibb.co/4wRxr2pw/383413.webp"
   },
   {
     "playerId": 5,
@@ -52,7 +42,7 @@
     "playerBattingStyle": "Left-hand Bat",
     "playerBowlingStyle": "Left-arm Fast",
     "playerPrice": 85000,
-    "playerImage": "https://i.ibb.co/qFX19w9y/403479.webp"
+    "playerImage": "https://i.ibb.co/jZ8MnTPz/383539-6.webp"
   },
   {
     "playerId": 6,
@@ -63,7 +53,7 @@
     "playerBattingStyle": "Right-hand Bat",
     "playerBowlingStyle": "N/A",
     "playerPrice": 72000,
-    "playerImage": "https://i.ibb.co/qFX19w9y/403479.webp"
+    "playerImage": "https://i.ibb.co/R8ncqtM/nkd7npf8-litton-das-afp-625x300-29-March-23.webp"
   },
   {
     "playerId": 7,
@@ -74,7 +64,7 @@
     "playerBattingStyle": "Right-hand Bat",
     "playerBowlingStyle": "Right-arm Fast",
     "playerPrice": 110000,
-    "playerImage": "https://i.ibb.co/qFX19w9y/403479.webp"
+    "playerImage": "https://i.ibb.co/XqRZX7C/Andre-Russell.webp"
   },
   {
     "playerId": 8,
@@ -85,7 +75,7 @@
     "playerBattingStyle": "Right-hand Bat",
     "playerBowlingStyle": "N/A",
     "playerPrice": 95000,
-    "playerImage": "https://i.ibb.co/qFX19w9y/403479.webp"
+    "playerImage": "https://i.ibb.co/kgh05nqv/faf-du-plessis-ipl-2023-rcb-vs-lsg-1681139843.jpg"
   },
   {
     "playerId": 9,
@@ -96,7 +86,7 @@
     "playerBattingStyle": "Right-hand Bat",
     "playerBowlingStyle": "Right-arm Leg Spin",
     "playerPrice": 120000,
-    "playerImage": "https://i.ibb.co/qFX19w9y/403479.webp"
+    "playerImage": "https://i.ibb.co/WvvwtgxF/rashid-khan.avif"
   },
   {
     "playerId": 10,
@@ -107,7 +97,7 @@
     "playerBattingStyle": "Left-hand Bat",
     "playerBowlingStyle": "N/A",
     "playerPrice": 90000,
-    "playerImage": "https://i.ibb.co/qFX19w9y/403479.webp"
+    "playerImage": "https://i.ibb.co/XZ617HQw/Miller.jpg"
   },
   {
     "playerId": 11,
@@ -118,7 +108,18 @@
     "playerBattingStyle": "Right-hand Bat",
     "playerBowlingStyle": "Off Spin",
     "playerPrice": 100000,
-    "playerImage": "https://i.ibb.co/qFX19w9y/403479.webp"
+    "playerImage": "https://i.ibb.co/sdjfW757/110181066.avif"
+  },
+  {
+    "playerId": 3,
+    "playerName": "Mushfiqur Rahim",
+    "playerCountry": "Bangladesh",
+    "playerType": "Wicketkeeper",
+    "playerRating": 8.7,
+    "playerBattingStyle": "Right-hand Bat",
+    "playerBowlingStyle": "N/A",
+    "playerPrice": 75000,
+    "playerImage": "https://i.ibb.co/G33J3GZ3/image-48342-1646396593.webp"
   },
   {
     "playerId": 12,
@@ -129,6 +130,6 @@
     "playerBattingStyle": "Right-hand Bat",
     "playerBowlingStyle": "Right-arm Fast",
     "playerPrice": 65000,
-    "playerImage": "https://i.ibb.co/qFX19w9y/403479.webp"
+    "playerImage": "https://i.ibb.co/ymV3vgHR/ahmed-0410newsroom-1601824793-422.jpg"
   }
 ]

@@ -31,31 +31,31 @@ const Card = ({
     return;
   };
   return (
-    <div className="w-full rounded-[18px] overflow-hidden bg-white border border-gray-100 cursor-pointer hover:-translate-y-[2px] transition-transform duration-200 shadow-sm">
+    <div className="w-full rounded-[18px] overflow-hidden bg-white border border-gray-100 cursor-pointer hover:-translate-y-0.5 transition-transform duration-200 shadow-sm">
       {/* ── Photo zone ── */}
-      <div className="relative overflow-hidden bg-gray-100 rounded-t-[18px]">
+      <div className="relative h-60 overflow-hidden bg-gray-100 rounded-t-[18px]">
         <img
-          className="w-full max-h-60 object-cover"
+          className="w-full h-full object-cover"
           src={player.playerImage}
           alt={`${player.playerName} Photo`}
         />
 
         {/* Name overlay */}
-        <div className="absolute bottom-0 left-0 right-0 px-4 pb-3.5 pt-7 bg-gradient-to-t from-black/60 to-transparent">
+        <div className="absolute bottom-0 left-0 right-0 px-4 pb-3.5 pt-7 bg-linear-to-t from-black/60 to-transparent">
           <p className="text-[17px] font-semibold text-white leading-tight">
             {player.playerName}
           </p>
-          <p className="text-[11px] text-white/70 mt-[3px] font-normal">
+          <p className="text-[11px] text-white/70 mt-0.75 font-normal">
             {player.playerCountry}
           </p>
         </div>
 
         {/* Top-right badges */}
-        <div className="absolute top-3 right-3 flex flex-col gap-[5px] items-end">
+        <div className="absolute top-3 right-3 flex flex-col gap-1.25 items-end">
           <span className="text-[9px] font-semibold tracking-[.06em] uppercase px-2.5 py-1 rounded-full bg-white/90 text-gray-700">
             {player.playerType}
           </span>
-          <span className="text-[10px] font-semibold bg-emerald-500 text-white px-2.5 py-[3px] rounded-full">
+          <span className="text-[10px] font-semibold bg-emerald-500 text-white px-2.5 py-0.75 rounded-full">
             {player.playerRating} / 10
           </span>
         </div>
@@ -63,7 +63,7 @@ const Card = ({
 
       {/* ── Detail rows ── */}
       <div className="px-4 pt-3.5 pb-1">
-        <div className="flex border-b border-gray-100 py-2">
+        <div className="flex justify-between border-b border-gray-100 py-2">
           <span className="text-[11px] text-gray-400 w-[46%] shrink-0">
             Batting style
           </span>
@@ -71,7 +71,7 @@ const Card = ({
             {player.playerBattingStyle}
           </span>
         </div>
-        <div className="flex border-b border-gray-100 py-2">
+        <div className="flex justify-between border-b border-gray-100 py-2">
           <span className="text-[11px] text-gray-400 w-[46%] shrink-0">
             Bowling style
           </span>
@@ -79,7 +79,7 @@ const Card = ({
             {player.playerBowlingStyle}
           </span>
         </div>
-        <div className="flex border-b border-gray-100 py-2">
+        <div className="flex justify-between border-b border-gray-100 py-2">
           <span className="text-[11px] text-gray-400 w-[46%] shrink-0">
             Player type
           </span>
@@ -87,7 +87,7 @@ const Card = ({
             {player.playerType}
           </span>
         </div>
-        <div className="flex py-2">
+        <div className="flex justify-between py-2">
           <span className="text-[11px] text-gray-400 w-[46%] shrink-0">
             Country
           </span>

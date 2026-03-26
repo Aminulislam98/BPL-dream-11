@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFlag, FaUser } from "react-icons/fa";
+import { MdDelete } from "react-icons/md";
 import { toast } from "react-toastify";
 
 const SelectedCard = ({
@@ -30,6 +31,48 @@ const SelectedCard = ({
     }
   };
   return (
+    <div className="grid grid-cols-2 border-b border-gray-200 py-3  px-4 hover:-translate-y-0.5 transition-transform duration-200 ">
+      <div className="photo&name flex flex-row gap-2 md:gap-3 justify-start items-center">
+        <div className="w-15 h-15 overflow-hidden rounded-xl">
+          <img
+            className="w-full h-full object-cover"
+            src={player.playerImage}
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 className="text-xl font-semibold">{player.playerName}</h2>
+          <div className="flex flex-col md:flex-row text-xs md:text-sm text-gray-600  md:gap-3">
+            <h2>{player.playerType}</h2>
+            <h2>{player.playerName}</h2>
+          </div>
+        </div>
+      </div>
+      <div className="rating&price&delete flex flex-row justify-between items-top md:items-center">
+        <div className="flex flex-col justify-top md:justify-center items-center">
+          <p className="text-base font-semibold">Rating</p>
+          <p className="font-semibold text-green-600">{player.playerRating}</p>
+        </div>
+        <div className="">
+          <h2 className="font-semibold text-xl">£{player.playerPrice}</h2>
+        </div>
+        <div>
+          <button>
+            <MdDelete
+              onClick={() => {
+                deletePlayer(player);
+              }}
+              className="text-red-600 w-6 h-6 cursor-pointer"
+            ></MdDelete>
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default SelectedCard;
+/* 
     <div className="p-6 border border-gray-300 rounded-3xl">
       <div className="mb-6">
         <img
@@ -77,8 +120,4 @@ const SelectedCard = ({
           </button>
         </div>
       </div>
-    </div>
-  );
-};
-
-export default SelectedCard;
+    </div> */
