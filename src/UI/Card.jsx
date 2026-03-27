@@ -31,9 +31,9 @@ const Card = ({
     return;
   };
   return (
-    <div className="w-full flex flex-col h-full rounded-0  md:rounded-[18px] overflow-hidden  cursor-pointer  md:hover:-translate-y-0.5 md:transition-transform md:duration-200 md:shadow-sm">
+    <div className="w-full flex flex-col h-full rounded-0  lg:rounded-[18px] overflow-hidden  cursor-pointer  lg:hover:-translate-y-0.5 lg:transition-transform lg:duration-200 lg:shadow-sm">
       {/* ── Photo zone ── */}
-      <div className="relative h-60 overflow-hidden bg-gray-100 rounded-t-0 md:rounded-t-[18px]">
+      <div className="relative h-60 overflow-hidden bg-gray-100 rounded-t-0 lg:rounded-t-[18px]">
         <img
           className="w-full h-full object-cover"
           src={player.playerImage}
