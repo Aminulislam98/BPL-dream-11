@@ -34,11 +34,11 @@ const Navbar = ({ coin }) => {
               <button
                 className="flex justify-between
            items-center font-semibold gap-2
-            py-1 px-2 md:py-2 md:px-3 border rounded-xl border-gray-200
+            py-1 px-2 md:py-2 md:px-3 border rounded-md md:rounded-xl border-gray-200
             text-sm md:text-base hover:bg-gray-100
              "
               >
-                Budget: £{coin.toLocaleString()}
+                BUDGET: £{coin.toLocaleString()}
               </button>
             </div>
             <div className="md:hidden flex">

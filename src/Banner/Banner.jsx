@@ -34,7 +34,10 @@ const Banner = ({ coin, setCoin, isClaimed, setIsClaimed }) => {
               <div className="p-1.5 rounded-2xl">
                 <div className=" text-green-500 font-semibold flex justify-center items-center flex-col py-2 px-8 rounded-xl">
                   <p>Congratulations!</p>
-                  <p> £90,000 has been awarded to your budget.</p>
+                  <p className="text-center">
+                    {" "}
+                    £90,000 has been awarded to your budget.
+                  </p>
                 </div>
               </div>
             ) : (

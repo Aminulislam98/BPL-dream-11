@@ -20,7 +20,9 @@ const Player = ({
     <div className="max-w-7xl mx-auto mt-8 md:mt-10 ">
       <div className="flex justify-between items-center mb-5 px-2 lg:px-0">
         {available === "available" ? (
-          <h1 className="text-2xl font-semibold">Available Players</h1>
+          <h1 className="text-xl md:text-2xl font-semibold">
+            Available Players
+          </h1>
         ) : (
           <h1 className="text-xl md:text-2xl font-semibold">
             Selected Players ({selectedPlayer.length}/6)
