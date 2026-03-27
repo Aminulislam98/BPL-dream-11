@@ -3,7 +3,7 @@ import navbarLogo from "../assets/logo.png";
 
 const Navbar = ({ coin }) => {
   return (
-    <div className="border-b border-b-gray-100 md:shadow-sm sticky top-0 z-50 bg-white px-2">
+    <div className="border-b border-b-gray-100 md:shadow-xs sticky top-0 z-50 bg-white px-2">
       <div className=" bg-white max-w-7xl mx-auto flex justify-between h-12 md:h-15 items-center">
         <div className="flex-1">
           <img className="w-10 md:w-13  h-10 md:h-13" src={navbarLogo} alt="" />
