@@ -17,8 +17,8 @@ const Player = ({
   const totalPlayer = selectedPlayer.length > 0 && `(${selectedPlayer.length})`;
 
   return (
-    <div className="max-w-7xl mx-auto mt-10">
-      <div className="flex justify-between items-center mb-5">
+    <div className="max-w-7xl mx-auto mt-8 md:mt-10 ">
+      <div className="flex justify-between items-center mb-5 px-2 md:px-0">
         {available === "available" ? (
           <h1 className="text-2xl font-semibold">Available Players</h1>
         ) : (
@@ -48,7 +48,7 @@ const Player = ({
       </div>
 
       {available === "available" ? (
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 xl:grid-cols-4 gap-x-1.5 gap-y-2 md:gap-6 mb-10">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 xl:grid-cols-4 md:gap-x-2 md:gap-y-4  mb-8 md:mb-10 divide-x divide-gray-200">
           {players.map((player) => (
             <AvailablePlayer
               key={player.playerId}
@@ -62,7 +62,7 @@ const Player = ({
           ))}
         </div>
       ) : (
-        <div className="mb-10">
+        <div className="mb-8 md:mb-10">
           {selectedPlayer.length === 0 ? (
             <div className="flex justify-center items-center flex-col border-2 py-7 mb-10 rounded-2xl border-red-300 bg-red-100 bg-red-0">
               <h1 className="text-2xl font-semibold mb-1 text-red-700">

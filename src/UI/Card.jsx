@@ -31,9 +31,9 @@ const Card = ({
     return;
   };
   return (
-    <div className="w-full rounded-[18px] overflow-hidden bg-white border border-gray-100 cursor-pointer hover:-translate-y-0.5 transition-transform duration-200 shadow-sm">
+    <div className="w-full flex flex-col h-full rounded-0  md:rounded-[18px] overflow-hidden  cursor-pointer  md:hover:-translate-y-0.5 md:transition-transform md:duration-200 md:shadow-sm">
       {/* ── Photo zone ── */}
-      <div className="relative h-60 overflow-hidden bg-gray-100 rounded-t-[18px]">
+      <div className="relative h-60 overflow-hidden bg-gray-100 rounded-t-0 md:rounded-t-[18px]">
         <img
           className="w-full h-full object-cover"
           src={player.playerImage}
@@ -62,12 +62,12 @@ const Card = ({
       </div>
 
       {/* ── Detail rows ── */}
-      <div className="px-4 pt-3.5 pb-1">
+      <div className="px-4 pt-3.5 pb-1 flex flex-col grow">
         <div className="flex justify-between border-b border-gray-100 py-2">
-          <span className="text-[11px] text-gray-400 w-[46%] shrink-0">
+          <span className="text-[11px] text-gray-400 w-[46%] shrink-0 ">
             Batting style
           </span>
-          <span className="text-[11px] text-gray-700 font-medium">
+          <span className="text-[11px] text-gray-700 font-medium text-right">
             {player.playerBattingStyle}
           </span>
         </div>
@@ -75,7 +75,7 @@ const Card = ({
           <span className="text-[11px] text-gray-400 w-[46%] shrink-0">
             Bowling style
           </span>
-          <span className="text-[11px] text-gray-700 font-medium">
+          <span className="text-[11px] text-gray-700 font-medium text-right">
             {player.playerBowlingStyle}
           </span>
         </div>
@@ -83,7 +83,7 @@ const Card = ({
           <span className="text-[11px] text-gray-400 w-[46%] shrink-0">
             Player type
           </span>
-          <span className="text-[11px] text-gray-700 font-medium">
+          <span className="text-[11px] text-gray-700 font-medium text-right">
             {player.playerType}
           </span>
         </div>
@@ -91,15 +91,15 @@ const Card = ({
           <span className="text-[11px] text-gray-400 w-[46%] shrink-0">
             Country
           </span>
-          <span className="text-[11px] text-gray-700 font-medium">
+          <span className="text-[11px] text-gray-700 font-medium text-right">
             {player.playerCountry}
           </span>
         </div>
       </div>
 
       {/* ── Footer ── */}
-      <div className="flex items-center justify-between px-4 pb-4 pt-3 border-t border-gray-100 mt-1">
-        <div>
+      <div className="flex flex-col items-center md:justify-between px-4 pb-4 pt-3 border-t border-gray-100 mt-auto ">
+        <div className="flex flex-row justify-between items-center w-full mb-2 grow">
           <p className="text-[10px] text-gray-400 mb-0.5 uppercase tracking-wide">
             Auction price
           </p>
@@ -110,7 +110,7 @@ const Card = ({
         <button
           onClick={chosePlayer}
           disabled={isSelected}
-          className={`text-xs font-semibold px-4 py-2 rounded-[10px] border transition-all duration-150
+          className={`text-xs md:text-sm font-semibold px-4 py-2 rounded-[10px] border transition-all duration-150 w-full 
         ${
           isSelected
             ? "border-green-300 bg-green-100 text-green-600 cursor-not-allowed"

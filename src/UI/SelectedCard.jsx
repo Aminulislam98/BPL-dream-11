@@ -32,7 +32,7 @@ const SelectedCard = ({
   };
   return (
     <div className="grid grid-cols-2 border-b border-gray-200 py-3  px-4 hover:-translate-y-0.5 transition-transform duration-200 ">
-      <div className="photo&name flex flex-row gap-2 md:gap-3 justify-start items-center mr-2 md:mr-0">
+      <div className="photo&name flex flex-row gap-2 md:gap-3 justify-start items-center mr-2 md:mr-0 items-stretch">
         <div className="w-15 h-15 overflow-hidden rounded-xl">
           <img
             className="w-full h-full object-cover"
