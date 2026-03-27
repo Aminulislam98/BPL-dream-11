@@ -34,7 +34,7 @@ const Player = ({
             onClick={() => {
               setAvailable("available");
             }}
-            className={`py-1 md:py-2 md:px-5 px-2.5 ${available === "available" ? " bg-[#E7FE29]" : "bg-white"} cursor-pointer border  border-gray-300 rounded-r-none rounded-l-2xl`}
+            className={`py-1 md:py-2 md:px-5 px-2.5 ${available === "available" ? " bg-[#E7FE29]" : "bg-white"} cursor-pointer border  border-gray-300 rounded-r-none rounded-xl md:rounded-l-2xl`}
           >
             Available
           </button>
@@ -42,7 +42,7 @@ const Player = ({
             onClick={() => {
               setAvailable("selected");
             }}
-            className={`md:py-2 py-1 px-2.5 md:px-5  ${available === "selected" ? " bg-[#E7FE29]" : "bg-white"} cursor-pointer border border-gray-300   rounded-r-2xl rounded-l-none `}
+            className={`md:py-2 py-1 px-2.5 md:px-5  ${available === "selected" ? " bg-[#E7FE29]" : "bg-white"} cursor-pointer border border-gray-300  rounded-xl md:rounded-r-2xl rounded-l-none `}
           >
             Selected{totalPlayer}
           </button>
