@@ -1,2 +1,5 @@
 @import "tailwindcss";
 @plugin "daisyui";
+.col-divider > *:nth-child(odd) {
+  border-right: 1px solid #e5e7eb;
+}

@@ -1,8 +1,6 @@
 import React from "react";
 import navbarLogo from "../assets/logo.png";
 
-import CoinImage from "../assets/coin.png";
-
 const Navbar = ({ coin }) => {
   return (
     <div className="border-b border-b-gray-100 md:shadow-sm sticky top-0 z-50 bg-white px-2">
@@ -52,7 +50,7 @@ const Navbar = ({ coin }) => {
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
+                    className="h-7 w-7"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -67,7 +65,7 @@ const Navbar = ({ coin }) => {
                 </div>
                 <ul
                   tabIndex="-1"
-                  className="menu menu-sm dropdown-content  bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow right-0 "
+                  className="menu menu-md dropdown-content   bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow right-0 "
                 >
                   <li>
                     <a>Home</a>

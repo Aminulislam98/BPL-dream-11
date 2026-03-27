@@ -51,7 +51,7 @@ const Card = ({
         </div>
 
         {/* Top-right badges */}
-        <div className="absolute top-3 right-3 flex flex-col gap-1.25 items-end">
+        <div className="absolute md:top-3 top-1.5 md:right-3 right-1.5 flex flex-col gap-1.25 items-end">
           <span className="text-[9px] font-semibold tracking-[.06em] uppercase px-2.5 py-1 rounded-full bg-white/90 text-gray-700">
             {player.playerType}
           </span>

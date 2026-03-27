@@ -4,6 +4,7 @@ import "./App.css";
 import Banner from "./Banner/Banner";
 import Navbar from "./Navbar/Navbar";
 import Player from "./Players/Player";
+import Footer from "./footer/Footer";
 
 const playerDetails = async () => {
   const playerResponse = await fetch("/data.json");
@@ -16,11 +17,17 @@ function App() {
   const [available, setAvailable] = useState("available");
   const [selectedPlayer, setSelectedPlayer] = useState([]);
   const [selectedName, setSelectedName] = useState([]);
+  const [isClaimed, setIsClaimed] = useState(false);
 
   return (
     <>
       <Navbar coin={coin} setCoin={setCoin}></Navbar>
-      <Banner coin={coin} setCoin={setCoin}></Banner>
+      <Banner
+        coin={coin}
+        setCoin={setCoin}
+        isClaimed={isClaimed}
+        setIsClaimed={setIsClaimed}
+      ></Banner>
 
       <Suspense
         fallback={
@@ -41,6 +48,7 @@ function App() {
           setSelectedName={setSelectedName}
         ></Player>
       </Suspense>
+      <Footer></Footer>
     </>
   );
 }

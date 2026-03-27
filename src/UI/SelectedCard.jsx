@@ -32,7 +32,7 @@ const SelectedCard = ({
   };
   return (
     <div className="grid grid-cols-2 border-b border-gray-200 py-3  px-4 hover:-translate-y-0.5 transition-transform duration-200 ">
-      <div className="photo&name flex flex-row gap-2 md:gap-3 justify-start items-center mr-2 md:mr-0 items-stretch">
+      <div className="photo&name flex flex-row gap-2 md:gap-3 justify-start  mr-2 md:mr-0 items-stretch">
         <div className="w-15 h-15 overflow-hidden rounded-xl">
           <img
             className="w-full h-full object-cover"
@@ -50,8 +50,8 @@ const SelectedCard = ({
           </div>
         </div>
       </div>
-      <div className="rating&price&delete flex flex-row justify-between items-center ml-4 md:ml-0">
-        <div className="flex flex-col justify-center items-center">
+      <div className="rating&price&delete flex flex-row justify-between items-top md:items-center ml-4 md:ml-0">
+        <div className="flex flex-col justify-top md:justify-center items-center">
           <p className="text-base font-semibold">Rating</p>
           <p className="font-semibold text-green-600">{player.playerRating}</p>
         </div>
@@ -60,7 +60,7 @@ const SelectedCard = ({
             £{player.playerPrice}
           </h2>
         </div>
-        <div>
+        <div className="">
           <button>
             <MdDelete
               onClick={() => {

@@ -2,9 +2,10 @@ import React from "react";
 import banner from "../assets/bg-shadow.png";
 import bannerMain from "../assets/banner-main.png";
 
-const Banner = ({ coin, setCoin }) => {
+const Banner = ({ coin, setCoin, isClaimed, setIsClaimed }) => {
   const claimFreeCredit = () => {
     setCoin(coin + 90000);
+    setIsClaimed(true);
   };
   return (
     <section className="px-2 mt-8 md:mt-12  md:mt-10 max-w-7xl mx-auto">
@@ -29,20 +30,29 @@ const Banner = ({ coin, setCoin }) => {
             <h3 className="font-medium text-2xl text-gray-400">
               Beyond Boundaries Beyond Limits
             </h3>
-            <div
-              className="border border-[#E7FE29] rounded-2xl p-1.5 
+            {isClaimed ? (
+              <div className="p-1.5 rounded-2xl">
+                <div className=" text-green-500 font-semibold flex justify-center items-center flex-col py-2 px-8 rounded-xl">
+                  <p>Congratulations!</p>
+                  <p> £90,000 has been awarded to your budget.</p>
+                </div>
+              </div>
+            ) : (
+              <div
+                className="border border-[#E7FE29] rounded-2xl p-1.5 
           hover:-translate-y-0.5 transition-transform duration-200 mt-2
           "
-            >
-              <button
-                onClick={() => {
-                  claimFreeCredit();
-                }}
-                className=" bg-[#E7FE29] rounded-xl text-sm font-bold py-2.5 px-5 cursor-pointer "
               >
-                Claim Free Credit
-              </button>
-            </div>
+                <button
+                  onClick={() => {
+                    claimFreeCredit();
+                  }}
+                  className=" bg-[#E7FE29] rounded-xl text-sm font-bold py-2.5 px-5 cursor-pointer "
+                >
+                  Claim Free Credit
+                </button>
+              </div>
+            )}
           </div>
         </div>
       </div>

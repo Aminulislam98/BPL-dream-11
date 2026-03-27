@@ -22,7 +22,7 @@ const Player = ({
         {available === "available" ? (
           <h1 className="text-2xl font-semibold">Available Players</h1>
         ) : (
-          <h1 className="text-2xl font-semibold">
+          <h1 className="text-xl md:text-2xl font-semibold">
             Selected Players ({selectedPlayer.length}/6)
           </h1>
         )}
@@ -32,7 +32,7 @@ const Player = ({
             onClick={() => {
               setAvailable("available");
             }}
-            className={`py-2 px-5 ${available === "available" ? " bg-[#E7FE29]" : "bg-white"} cursor-pointer border  border-gray-300 rounded-r-none rounded-l-2xl`}
+            className={`py-1 md:py-2 md:px-5 px-2.5 ${available === "available" ? " bg-[#E7FE29]" : "bg-white"} cursor-pointer border  border-gray-300 rounded-r-none rounded-l-2xl`}
           >
             Available
           </button>
@@ -40,7 +40,7 @@ const Player = ({
             onClick={() => {
               setAvailable("selected");
             }}
-            className={`py-2 px-5  ${available === "selected" ? " bg-[#E7FE29]" : "bg-white"} cursor-pointer border border-gray-300   rounded-r-2xl rounded-l-none `}
+            className={`md:py-2 py-1 px-2.5 md:px-5  ${available === "selected" ? " bg-[#E7FE29]" : "bg-white"} cursor-pointer border border-gray-300   rounded-r-2xl rounded-l-none `}
           >
             Selected{totalPlayer}
           </button>
@@ -48,7 +48,7 @@ const Player = ({
       </div>
 
       {available === "available" ? (
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 xl:grid-cols-4 md:gap-x-2 md:gap-y-4  mb-8 md:mb-10 divide-x divide-gray-200">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 xl:grid-cols-4 md:gap-x-2 md:gap-y-4  mb-8 md:mb-60 col-divider divide-gray-200 ">
           {players.map((player) => (
             <AvailablePlayer
               key={player.playerId}
@@ -73,7 +73,7 @@ const Player = ({
               </h1>
             </div>
           ) : (
-            <div className="flex flex-col  border rounded-t-3xl border-gray-300 border-b-0 ">
+            <div className="flex flex-col  border rounded md:rounded-t-3xl border-gray-300 border-b-0 mx-2 md:mx-0">
               {selectedPlayer.map((player) => (
                 <SelectedCard
                   player={player}
