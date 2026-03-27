@@ -48,7 +48,7 @@ const Player = ({
       </div>
 
       {available === "available" ? (
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 lg:gap-x-2 lg:gap-y-4  mb-8 md:mb-30 col-divider divide-gray-200 border-b border-gray-200 md:border-b-0 lg:border-gray-0 md:divide-x ">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 lg:gap-x-2 lg:gap-y-4  mb-8 md:mb-30 col-divider divide-gray-200 border-b border-gray-200 lg:border-b-0 lg:border-gray-0 md:divide-x ">
           {players.map((player) => (
             <AvailablePlayer
               key={player.playerId}
