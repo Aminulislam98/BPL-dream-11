@@ -65,7 +65,7 @@ const Player = ({
         <div className="mb-8 md:mb-10">
           {selectedPlayer.length === 0 ? (
             <div className="flex justify-center items-center flex-col border-2 py-7 mb-10 rounded-2xl border-red-300 bg-red-100 bg-red-0">
-              <h1 className="text-2xl font-semibold mb-1 text-red-700">
+              <h1 className="text-2xl font-semibold mb-1 text-red-700 px-2 lg:px-0">
                 No Player Selected yet!
               </h1>
               <h1 className="text-base text-red-800 font-semibold">
